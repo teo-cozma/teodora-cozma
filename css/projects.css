@@ -1,0 +1,112 @@
+/* Portfolio section */
+@font-face {
+    font-family: Halo3;
+    src: url(../fonts/halo3/Halo3.ttf);
+}
+@font-face {
+    font-family: Lobster Two;
+    src: url(../fonts/lobsterTwo/LobsterTwo-BoldItalic.ttf);
+}
+
+/* All projects*/
+.projects {
+    width: 100%;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+@media screen and (max-width: 992px) {
+    .projects {
+        width: 100%;
+        grid-template-columns: auto;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+}
+.project {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0em auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5em 1em;
+}
+
+.imgbox{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    margin: 0em auto;
+    z-index: 0;
+}
+#enchanted_arena {
+    font-family: Halo3;
+    color: rgb(219, 165, 48);
+    font-size: 4em;
+    text-align: center;
+}
+@media screen and (max-width: 992px) {
+    #enchanted_arena {
+        font-size: 3em;
+    }
+}
+
+#pizza_master {
+    font-size: 4em;
+    font-family: Lobster Two;
+    color: white;
+}
+
+.card {
+    opacity: 0%;
+    z-index: -1;
+    color: white;
+    padding: 0em 2em 0.5em;
+}
+.project:hover .logo {
+    opacity: 10%;
+    transition: 0.5s ease-in-out;
+    /*z-index: -1;*/
+}
+.project:hover .card {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 100%;
+    z-index: 1;
+}
+
+
+/* Individual features */
+@media screen and (max-width: 460px) {
+    main {
+        margin: 1em auto;
+        width: 90%;
+    }
+}
+
+#getflix {
+	background-color: black;
+}
+#RPG {
+	background-color: rgb(33, 1, 51);
+}
+#cookie_clicker {
+	background-color: #215878;
+}
+#restaurant {
+	background-color: #1D3461;
+}
