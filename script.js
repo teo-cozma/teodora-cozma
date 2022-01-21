@@ -3,12 +3,15 @@ const portfolio = document.getElementById('portfolio_section');
 const work = document.getElementById('work');
 const cta = document.getElementById('CTA');
 
-portfolio.addEventListener('click', () => {
-    work.scrollIntoView({behavior: "smooth"});
-});
-cta.addEventListener('click', () => {
-    work.scrollIntoView({behavior: "smooth"});
-});
+// window.onload = function() {
+    portfolio.addEventListener('click', () => {
+        work.scrollIntoView({behavior: "smooth"});
+    });
+    cta.addEventListener('click', () => {
+        work.scrollIntoView({behavior: "smooth"});
+    });
+// }
+
 
 // Scroll down to About section //
 const about = document.getElementById('about_section');
