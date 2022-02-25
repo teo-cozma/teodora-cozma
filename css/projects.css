@@ -110,3 +110,8 @@
 #restaurant {
 	background-color: #1D3461;
 }
+
+.links {
+    display:flex;
+    justify-content: space-between;
+}
