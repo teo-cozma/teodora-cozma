@@ -104,7 +104,7 @@ h2 {
 }
 .skills {
 	display: grid;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: auto auto;
 	grid-gap: 2em;
 }
 @media screen and (max-width: 1520px) {
